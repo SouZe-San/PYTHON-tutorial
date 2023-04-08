@@ -23,7 +23,8 @@ class Employee():
     def greet():
         print("hallo My Asshole Co-Worker")
     
-    # We Can Create Method that Change the Class Attributes not Instance
+#^ We Can Create Method that Change the Class Attributes not Instance
+      
      # def changeSalary(self, sal): # this Also Do same but Not Use
     #     self.__class__.salary = sal
 
@@ -44,24 +45,24 @@ class Employee():
 
 '''
 # Create the Object of the CLass    
-employee1 = Employee() #--> Create the instance of the class .. when Constructor not present
+employee1 = Employee() #!--> Create the instance of the class .. when Constructor not present
 employee2 = Employee()  
 
 employee1.name  = "Souze"
 employee1.id = 1
 employee1.funtion(10)
-employee1.printDetails() # This syntax originally look -> Employee.printDetails(employee1) : self::employee1
+employee1.printDetails() #! This syntax originally look -> Employee.printDetails(employee1) : self::employee1
 
 
 print(employee1.company)
 print(employee2.company) # both Shown as it Predefine
 Employee.company = "Chunchlyroll"
-print(employee1.company)  # -----> Here Direct Change the class Attribute
+print(employee1.company)  #! -----> Here Direct Change the class Attribute
 print(employee2.company) 
 
 print(employee1.salary)
 print(employee2.salary)
-# ----> Now Only CHange the Instance Attributes....
+#^ ----> Now Only CHange the Instance Attributes....
 employee1.salary =10000
 employee2.salary = 10100
 print(employee1.salary)
@@ -71,12 +72,12 @@ print(employee2.salary)
 # Normally if We don't use self parameters in any function at define time, then it will show ERROR, 
 # But if we want to crete a Void function (like Greet())which dont take any parameters and don't return anything only print ,,,
 ### ---> For those functions ,,, we have to create them as static Method 
-# FOr that Use this --> @staticmethod
+# !FOr that Use this --> @staticmethod
 # => At Calling time if this Don't have upper Syntax then it show error
 employee1.greet() 
 
 
-# ----------------Constructor : as u know ,crate with this: __init__(parameters) ===========
+#@ ----------------Constructor : as u know ,crate with this: __init__(parameters) ===========
 
 employee3 = Employee("Akane", 20)
 employee3.id = 69
@@ -84,12 +85,13 @@ employee3.id = 69
 
 # print(f"Salary of Akane : {employee3.salary}")
 # print(f"Salary which Set in Employee Class: {Employee.salary}")
-# # Change the Salary Attribute Of Class not This instance
+
+# #! Change the Salary Attribute Of Class not This instance
 # employee3.changeSalary(3000)  #::--> Employee ka Salary ka Value 3000 ho gya 
 # print(f"Salary of Akane : {employee3.salary}")
 # print(f"Salary which Set in Employee Class: {Employee.salary}")
 
-#================= PROPERTIES =================
+#@================= PROPERTIES =================
 #--------------- Getter and setter -------------------
 
 print(f"Before set the totalSalary, the salary is: {employee3.salary}")
@@ -116,7 +118,7 @@ print(obj.name)
 '''
 
 '''
-# 1. -------==> Single Inheritance
+# @1. -------==> Single Inheritance
 class ParentClass():
     location = 'Chaipat,Daspur2,Ps'
     def __init__(self, name,age):
@@ -142,7 +144,7 @@ class ChildClass(ParentClass): # in this wat Can Inherit Other Classes
 child = ChildClass("soumyajit", 19, 2)
 child.greet()
 
-# 2. -------==> Multiple Inheritance -- One child inheriting from more than one parent
+#@ 2. -------==> Multiple Inheritance -- One child inheriting from more than one parent
 
 class Father1():
     pass
@@ -156,7 +158,7 @@ class ChildClass(Father1, Father2): # this Child Class Inherits from 2 class ;;;
     pass
 
 
-# 3. -------==> MultiLevel Inheritance -- Tree Type -- grandpa -> Father -> children
+#@  3. -------==> MultiLevel Inheritance --: Tree Type -- grandpa -> Father -> children
 
 class GrandParent:
     country = "India"
@@ -211,7 +213,7 @@ pr = ChildClass()
 pr.takeBreath() 
 pr.getSalary()
 
-#+====================== Operator Overloading =================
+#@+====================== Operator Overloading =================
 #by Using Dunder
 
 class Number:

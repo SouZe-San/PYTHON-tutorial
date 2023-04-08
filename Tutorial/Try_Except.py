@@ -31,7 +31,7 @@ a = increment(input("Enter a number: "))
 print(a)
 
 
-#^ Try with Else ---=> the else Path Only Shown if Try Success 
+#^ Try with Else ---=> the else Part Only Shown if Try Success 
 try:
     a = int(input("Enter a number: "))
     print(a)
