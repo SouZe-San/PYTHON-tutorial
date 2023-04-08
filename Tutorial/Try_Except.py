@@ -1,7 +1,6 @@
 '''
 If some try to division by zero then Normally programme will fail But now it not stop it work Normally end show the Problem
-'''
-'''        
+'''      
 def divOfNumber():
     try:
         num1 = int(input("enter a number: "))
@@ -21,7 +20,7 @@ while i<5:
     i+=2
 
 
-# -==-=-> can make Custom Exception,,
+#^ -==-=-> can make Custom Exception,, but can't name of the ValueError
 def increment(num):
     try:
         return int(num) + 1
@@ -32,7 +31,7 @@ a = increment(input("Enter a number: "))
 print(a)
 
 
-# Try with Else ---=> the else Path Only Shown if Try Success 
+#^ Try with Else ---=> the else Path Only Shown if Try Success 
 try:
     a = int(input("Enter a number: "))
     print(a)
@@ -41,7 +40,7 @@ except Exception as e:
 else:
     print("Thanks for Enter a number")
 
-# try_except_finally : ----> 
+#^ try_except_finally : ----> 
 # the finally Execute Whatever happens... even the Code Exit ,.. Other Code will not but After execute the finally-Statement the code wil execute ..
 
 try:
@@ -56,7 +55,11 @@ finally:
 print("Thanks for using the program")
 
 
-        WHEN HAVE TO EXPORT A FILE TO ANOTHER FILE THEN :
+
+# ^-----------------------------------------------------
+'''
+
+        # !WHEN HAVE TO EXPORT A FILE TO ANOTHER FILE THEN :
          import m06_file1 :---> In this Way have to write file name which want to Import then The Whole File's Code Will run here
          m06_file1.greet("Harry")  : In this way can use function form Imported File
         ALSO CAN USE : import file_NAme as FN
@@ -70,10 +73,15 @@ print("Thanks for using the program")
         it telling like if __main__ then Execute the further code........ For Other file where it export For that file it __name__ will be the file Name.. so those code will Npt Execute in those file
 
 '''
+
+
 def greet(name):
     print(f"Good morning, {name}")
-        
-print(__name__) # ---> For this file print __main __ ,,,,, But IN Othe file It Shows the file Name and thats Why it Cant Pass the IF statement
-if __name__ == "__main__": # if Export Under COde will Not Execute in that file Only Upper COde will execute
+
+
+print(__name__)  # ---> For this file print __main __ ,,,,, But IN Othe file It Shows the file Name and thats Why it Cant Pass the IF statement
+if __name__ == "__main__":  # if Export Under COde will Not Execute in that file Only Upper COde will execute
     n = input("Enter a name\n")
     greet(n)
+
+#! Import in Enumerate

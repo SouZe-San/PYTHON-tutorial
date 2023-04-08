@@ -1,18 +1,18 @@
 import os
 
-# register section function
+#? register section function
 
 
 def register():
     return [input("User name : "), int(input("User id : "))]
 
 
-# # longin section function
+# * longin section function
 def login():
     return [input("User name : "), int(input("User id : "))]
 
 
-# # input section function
+# @ input section function
 
 
 def input_getting():
@@ -26,7 +26,7 @@ def input_getting():
     return [reg, log]
 
 
-# # outss
+#! outss
 key = 1
 total_attempts = 3
 print("\tThis is a login procedure\t")

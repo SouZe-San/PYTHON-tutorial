@@ -12,7 +12,7 @@
 # print(later)
 
 
-newString = ''' hi i am a boy you motherfucker  bastrade'''
+newString = ''' hi i am a boy you motherfucker  bastards'''
 if newString.find('  '):
     print("Double Space found")
     newString  = newString.replace('  ', ' ')

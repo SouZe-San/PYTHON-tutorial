@@ -1,6 +1,7 @@
 """
 Set is as we know , it collection elements
- we can add element but cannot modify them like list/dict
+A set is a collection which is unordered, unchangeable*, and unIndexed.
+ we can add/remove element but cannot modify them like list/dict...
  --> Set don't posses Same element Multiple time
  --> As list and dict can be modified that why we can't add them In Set but can add Tuple as it cannot modify after creation
 
@@ -19,7 +20,7 @@ b.add(5)
 b.add(5) # Adding a value repeatedly does not changes a set
 b.add((4, 5, 6)) # add a tuple
 print(len(b)) # Prints the length of this set
-b.remove(4) # Removes 5 from set b... Take element as parameter -- if the Argument dosn't exist in set then it throw an error
+b.remove(4) # Removes 5 from set b... Take element as parameter -- if the Argument doesn't exist in set then it throw an error
 print(b) # Whatever Way put It print in Sorting
 print(b.pop()) # --> Remove the  first element of set and return it
 

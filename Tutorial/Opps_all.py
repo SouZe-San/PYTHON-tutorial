@@ -105,7 +105,6 @@ print(f"AFter set the totalSalary, the Bonus is: {employee3.bonus}")
 '''
 
 
-'''
 class Sample: 
     def __init__(slf, name):
         slf.name = name
@@ -211,7 +210,6 @@ class ChildClass(Parent): # this Class Also Access all Method
 pr = ChildClass() 
 pr.takeBreath() 
 pr.getSalary()
-'''
 
 #+====================== Operator Overloading =================
 #by Using Dunder
