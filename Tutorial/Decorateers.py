@@ -1,4 +1,5 @@
-# ][[[[[[[[[[[[[[[[[[   LAMBDA FUNCTION ]]]]]]]]]]]]]]]]]]
+
+#@ ][[[[[[[[[[[[[[[[[[   LAMBDA FUNCTION ]]]]]]]]]]]]]]]]]]
 # def func(a):
 #     return a+5
 
@@ -15,7 +16,7 @@ print(square(x))  # Prints 9
 print(sum(x, 1, 2))  # Prints 6
 
 
-# [[[[[[[[[[[[[[[[[[[[ .JOIN ]]]]]]]]]]]]]]]]]]]]
+#@[[[[[[[[[[[[[[[[[[[[ .JOIN ]]]]]]]]]]]]]]]]]]]]
 # use in any iterable obj, connect items of list/set/tuple by something and convert them into full string
 
 l = ["Camera", "Laptop", "Phone", "ipad",
@@ -27,7 +28,7 @@ print(sentence)
 print(type(sentence))
 
 
-# [[[[[[[[[[[[[[[[[[ Format String ]]]]]]]]]]]]]]]]]]]
+#@ [[[[[[[[[[[[[[[[[[ Format String ]]]]]]]]]]]]]]]]]]]
 # it Used in Past now use f-String
 name = "Souze"
 wort = "Nothing"
@@ -39,9 +40,9 @@ print(a)
 print(b)
 
 
-# [[[[[[[[[[[[[[[[[[[[[[ Map ]]]]]]]]]]]]]]]]]]]]]]
+#@ [[[[[[[[[[[[[[[[[[[[[[ Map ]]]]]]]]]]]]]]]]]]]]]]
 # uae to apply one function on every element of an given list
-#  map(function, list) : return type <class 'map'>
+#  map(function, iterableElement) : return type <class 'map'>
 def cube(num):
     return num ** 3
 
@@ -59,7 +60,7 @@ print(l2)
 (n, k) = map(int, input().split())
 
 
-# {[[[[[[[[[[[[[[[[[ Filter ]]]]]]]]]]]]]]]]]}
+#@ {[[[[[[[[[[[[[[[[[ Filter ]]]]]]]]]]]]]]]]]}
 # filter(function, list ) : return <class 'filter'>type
 # Sorting List_items according passing function  ,,
 def greater_than_5(x): return x > 5
@@ -68,7 +69,7 @@ def greater_than_5(x): return x > 5
 print(list(filter(greater_than_5, l1)))
 
 
-# [[[[[[[[[[[[[[[ Reduce ]]]]]]]]]]]]]]
+# @[[[[[[[[[[[[[[[ Reduce ]]]]]]]]]]]]]]
 # apply the given function to every sequential pair in given list
 # {(0,1),(1,2),(1,3),(3,4)...  } like take input
 #  THE FUNCTION MUST HAVE ONLY 2 PARAMETERS not more than
