@@ -1,7 +1,8 @@
 # {{{{{{{{{{{{{ import Other Py file}}}}}}}}}}}}}
 import Try_Except as T_E
 
-T_E.greet(",sir!")  # --> Can Use Other File's Function Which Not Define in This file
+# --> Can Use Other File's Function Which Not Define in This file
+T_E.greet(",sir!")
 
 
 """
@@ -28,7 +29,7 @@ def func2():
 func2()
 print(f"Print statement 3: {a}")
 
-# Enumerate ----> it helps to use both Index and item in loop of any Iterable object(list, set, tuple)
+# ^ Enumerate ----> it helps to use both Index and item in loop of any Iterable object(list, set, tuple)
 # foe Print one by One use foe in loop but Cant get Index withOut count  ---> the Syntax in loop "first Index then Item "
 
 list = [32, 4, 12, 54, 7, True, 4.23, 53.34, "baby"]

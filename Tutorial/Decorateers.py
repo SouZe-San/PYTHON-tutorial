@@ -1,10 +1,12 @@
+from functools import reduce
 
-#@ ][[[[[[[[[[[[[[[[[[   LAMBDA FUNCTION ]]]]]]]]]]]]]]]]]]
+# @ ][[[[[[[[[[[[[[[[[[   LAMBDA FUNCTION ]]]]]]]]]]]]]]]]]]
 # def func(a):
 #     return a+5
 
 # simple function Code can write in One Line
-from functools import reduce
+
+
 def func(a): return a+5
 def square(x): return x*x
 def sum(a, b, c): return a+b+c  # Send multiple Items
@@ -16,7 +18,7 @@ print(square(x))  # Prints 9
 print(sum(x, 1, 2))  # Prints 6
 
 
-#@[[[[[[[[[[[[[[[[[[[[ .JOIN ]]]]]]]]]]]]]]]]]]]]
+# @[[[[[[[[[[[[[[[[[[[[ .JOIN ]]]]]]]]]]]]]]]]]]]]
 # use in any iterable obj, connect items of list/set/tuple by something and convert them into full string
 
 l = ["Camera", "Laptop", "Phone", "ipad",
@@ -28,7 +30,7 @@ print(sentence)
 print(type(sentence))
 
 
-#@ [[[[[[[[[[[[[[[[[[ Format String ]]]]]]]]]]]]]]]]]]]
+# @ [[[[[[[[[[[[[[[[[[ Format String ]]]]]]]]]]]]]]]]]]]
 # it Used in Past now use f-String
 name = "Souze"
 wort = "Nothing"
@@ -40,7 +42,7 @@ print(a)
 print(b)
 
 
-#@ [[[[[[[[[[[[[[[[[[[[[[ Map ]]]]]]]]]]]]]]]]]]]]]]
+# @ [[[[[[[[[[[[[[[[[[[[[[ Map ]]]]]]]]]]]]]]]]]]]]]]
 # uae to apply one function on every element of an given list
 #  map(function, iterableElement) : return type <class 'map'>
 def cube(num):
@@ -60,7 +62,7 @@ print(l2)
 (n, k) = map(int, input().split())
 
 
-#@ {[[[[[[[[[[[[[[[[[ Filter ]]]]]]]]]]]]]]]]]}
+# @ {[[[[[[[[[[[[[[[[[ Filter ]]]]]]]]]]]]]]]]]}
 # filter(function, list ) : return <class 'filter'>type
 # Sorting List_items according passing function  ,,
 def greater_than_5(x): return x > 5

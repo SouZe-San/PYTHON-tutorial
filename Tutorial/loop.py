@@ -7,18 +7,18 @@
 
 fruits = ['Banana', 'Watermelon', 'Grapes', 'Mangoes']
 
-#  1. while ----------------->
+# @  1. while ----------------->
 i = 0
 while i < len(fruits):
     print(fruits[i])
     i += 1
 print('\n')
 
-# 2. for in ===========>
+# @ 2. for in ===========>
 for item in fruits:
     print(item)
 
-# 3. for in range(_start, _stop, _step) ---------------> Only Count Number
+# @ 3. for in range(_start, _stop, _step) ---------------> Only Count Number
 for i in range(0, 4, 1):  # this syntax is like Starting i=0 , stop if i=3 and i+1 every iteration
     print(i, fruits[i])
 
